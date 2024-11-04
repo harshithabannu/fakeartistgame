@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Artist Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="setup">
+        <h2>Fake Artist Game Setup</h2>
+        <label for="players">Enter number of players:</label>
+        <input type="number" id="players" min="4" max="10" required>
+        <button onclick="setupGame()">Start Game</button>
+    </div>
+
+    <div id="canvasSection" style="display: none;">
+        <h2>Draw!</h2>
+        <canvas id="drawingCanvas" width="400" height="400" style="border: 1px solid black;"></canvas>
+        <button onclick="clearCanvas()">Clear Canvas</button>
+        <div id="roles"></div>
+        <button onclick="findFakeArtist()">Vote for Fake Artist</button>
+        <div id="voteContainer"></div>
+        <button id="nextRoundButton" onclick="nextRound()" style="display: none;">Next Round</button>
+    </div>
+
+    <div id="votingSection" style="display: none;">
+        <h2>Check Your Role</h2>
+        <label for="playerNumber">Enter your player number:</label>
+        <input type="number" id="playerNumber" min="1" max="10">
+        <button onclick="showRole()">Show My Role</button>
+        <span id="roleDisplay" style="color: green; margin-left: 10px;"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #ff77a1, #a14db1); /* Pink to Purple Gradient */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+.setup {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#canvasSection {
+    margin: 20px;
+}
+
+#drawingCanvas {
+    border: 2px solid #333;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.player {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #ff4081; /* A vibrant pink for buttons */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f50057; /* Darker pink on hover */
+}
+
+h2 {
+    color: #5e35b1; /* A complementary purple color for headings */
+}
+
